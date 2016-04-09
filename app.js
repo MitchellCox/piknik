@@ -41,6 +41,13 @@ app.use('/explore', explore);
 app.use('/search', search);
 app.use('/list', list);
 
+app.use('/', explore);
+app.use('/', search);
+app.use('/', list);
+
+app.use('/search', search);
+app.use('/explore', explore); 
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

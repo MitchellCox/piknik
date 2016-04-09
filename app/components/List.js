@@ -10,9 +10,10 @@ class List extends Component {
             <div className="card green lighten-4">
               <div>
             		<h1>Item:<h1>
+            		{this.props.Item}
               </div>
               <br />
-              <button onClick={() => this.props.deleteNote(this.props.id)} className='btn red'>Delete</button>
+              <button onClick={() => this.props.deleteItem(this.props.id)} className='btn red'>Delete</button>
             </div>
           </div>);
 	}
