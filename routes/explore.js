@@ -6,7 +6,10 @@ var Grocery = mongoose.model('Grocery');
 // Get an item
 router.get('/', function(req, res) {
   Grocery.find( function(err, items) {
-    res.render('explore', { title: 'Grocery' });
+    if (err) 
+    	res.json(err)
+    else
+      res.json(items);
   });
 });
 
