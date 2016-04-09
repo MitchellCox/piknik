@@ -6,8 +6,8 @@ var Grocery = mongoose.model('Grocery');
 router.get('/', function(req, res) {
 	Grocery.find( function( err, grocery) {
 		res.render('grocery');
-	})
-})
+	});
+});
 
 router.put('/:id', function(req, res, next) {
 	Grocery.findByIdAndUpdate(

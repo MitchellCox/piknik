@@ -1,11 +1,11 @@
 module.exports = {
-  entry: [
-    './app/index.js',
-  ],
+  entry: {
+    app: './app/index.js',
+  },
   output: {
-    path: __dirname + '/static/',
-    filename: 'bundle.js',
-    publicPath: '/static/'
+    path: __dirname + '/public/',
+    filename: '[name].js',
+    publicPath: '/public/'
   },
   module: {
     loaders: [
