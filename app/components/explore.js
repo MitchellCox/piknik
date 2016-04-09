@@ -1,10 +1,4 @@
 import React, {Component} from 'react';
-
-<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.6/react.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.6/react-dom.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
-<script type="text/babel">
     
 <h2>Explore</h2>  
   var ItemGridRow = React.createClass({
