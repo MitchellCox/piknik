@@ -5,4 +5,4 @@ var Schema   = mongoose.Schema;
 //});
 
 //mongoose.model( 'Model', Model );
-mongoose.connect( 'mongodb://localhost/react-starter' );
+mongoose.connect( 'mongodb://localhost/Piknik' );
