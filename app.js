@@ -6,13 +6,14 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
+var app = express();
+
 var routes = require('./routes/index');
 var search = require('./routes/search');
 var explore = require('./routes/explore'); 
 var list = require('./routes/list')
-
-
-var app = express();
+var about = require('./routes/about');
+var contact = require('./routes/contact'); 
 
 var webpack = require('webpack');
 var webpackDevMiddleware = require('webpack-dev-middleware');
@@ -40,6 +41,8 @@ app.use('/', routes);
 app.use('/explore', explore);
 app.use('/search', search);
 app.use('/list', list);
+app.use('/about', about);
+app.use('/contact', contact);
 
 app.use('/', explore);
 app.use('/', search);
