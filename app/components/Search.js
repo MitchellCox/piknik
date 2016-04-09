@@ -6,10 +6,9 @@ class Search extends Component {
 	constructor(props){
 		super(props);
 		this.getSearch = this.getSearch.bind(this);
-		this.addSearch = this.addSearch.bind(this);
-		this.state = { search: [] };
+		this.submitForm= this.submitForm.bind(this);
+		this.state = { grocery: [] };
 	}
-	
 }
 getSearch(){
 	$.ajax({
@@ -22,11 +21,18 @@ getSearch(){
 		console.log(msg)
 	});
 }
+submitForm(e){
+  e.preventDefault();
+  let groceries = this.state.groceries;
+  groceries.unshift({ name: this.refs.name.value });
+  this.refs.name.value = null;
+  this.setState({ category: items, nextID: this.nextID(this.state.nextID) });
+}
 render(){
 	return(
 		<nav>
-    <div class="nav-wrapper">
-      <form>
+    <div class="center nav-wrapper">
+      <form onSubmit={this.submitForm}>
         <div class="input-field">
           <input id="search" type="search" required>
           <label for="search"><i class="material-icons">search</i></label>
