@@ -1,11 +1,13 @@
 var express = require('express');
 var router = express.Router();
 var mongoose = require('mongoose');
-var Search = mongoose.model('Search');
+var Grocery = mongoose.model('Grocery');
 
 router.get('/', function(req, res) {
-	Search.find( function( err, search) {
-		res.send(search);
+	Grocery.find( function( err, grocery) {
+		res.send(grocery);
 	});
 });
+
+module.exports = router;
 

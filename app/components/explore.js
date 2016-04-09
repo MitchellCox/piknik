@@ -8,12 +8,11 @@ import React, {Component} from 'react';
               <div class="row">
                 <div class="card-panel explore">
                   <tr>
-                      <th>{this.props.item.Category}</th>
+                      <th>{this.props.Grocery.Category}</th>
                       <div class="card pink darken-3">
                         <div class="card-content white-text">
-                      <td>{this.props.item.Item}
-                          <span>{this.props.item.Brand}</span>
-                          <span>{this.props.item.Price}</span>
+                      <td>
+                          <span>{this.props.Grocery.Brand}</span>
                       </td>
                         </div>
                       </div>
@@ -28,30 +27,28 @@ import React, {Component} from 'react';
   var ItemGridTable = React.createClass({
       getInitialState: function(){
           return {
-              items:[]
+              Grocery:[]
           }
       },
       componentDidMount:function(){
           $.get(this.props.dataUrl, function(data){
               if(this.isMounted()){
                   this.setState({
-                      items: data
+                      Grocery: data
                   });
               }
           }.bind(this));
       },
       render : function(){
          var rows = [];
-          this.state.items.forEach(function(item){
+          this.state.Grocery.forEach(function(item){
               rows.push(<ItemGridRow key={item.ItemID} item={item}/>);
           });
          return (<table className="table table-bordered table-responsive">
               <thead>
                   <tr>
                       <th>Category</th>
-                      <td>Item</td>
                       <td>Brand</td>
-                      <td>Price</td>
                   </tr>
               </thead>
               <tbody>

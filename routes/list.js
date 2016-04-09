@@ -3,9 +3,10 @@ var router = express.Router();
 var mongoose = require('mongoose');
 var Grocery = mongoose.model('Grocery');
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+router.get('/', function(req, res) {
+  Grocery.find( function( err, grocery) {
+    res.send(grocery);
+  });
 });
 
 module.exports = router;

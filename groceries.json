@@ -1,25 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< 38cd672b2612221c2599bce3244a29c13acce58b
-{"_id":{"$oid":"5709145717cd4cc0372b409c"},"category":"fruit","brand":"none","product":"banana","price":0.69,"size":"medium"}
-{"_id":{"$oid":"570914e817cd4cc0372b409d"},"category":"fruit","brand":"none","product":"apple","price":0.75,"size":"small"}
-{"_id":{"$oid":"570926f517cd4cc0372b40a0"},"category":"fruit","brand":"Dole","product":"pinapple","price":3.2,"size":"large"}
-{"_id":{"$oid":"5709275a17cd4cc0372b40a1"},"category":"fruit","brand":"","product":"orange","price":1.06,"size":"medium"}
-{"_id":{"$oid":"5709278b17cd4cc0372b40a2"},"category":"vegtable","brand":"","product":"roma tomato","price":1.99,"size":"small"}
-{"_id":{"$oid":"570927bb17cd4cc0372b40a3"},"category":"vegtable","brand":"","product":"carrot","price":1.69,"size":"large"}
-{"_id":{"$oid":"5709280917cd4cc0372b40a4"},"category":"vegtable","brand":"","product":"onion","price":0.79,"size":"medium"}
-{"_id":{"$oid":"5709283e17cd4cc0372b40a5"},"category":"vegtable","brand":"","product":"potato","price":0.55,"size":"medium"}
-{"_id":{"$oid":"5709287c17cd4cc0372b40a6"},"category":"dairy","brand":"Cool Cow","product":"milk","price":2.49,"size":"medium"}
-{"_id":{"$oid":"5709296917cd4cc0372b40a7"},"category":"Dairy","brand":"Land O Lakes","product":"butter","price":2.99,"size":"small"}
-{"_id":{"$oid":"57092a0117cd4cc0372b40a8"},"category":"dairy","brand":"Dannon","product":"yogurt","price":1.09,"size":"small"}
-{"_id":{"$oid":"57092a6017cd4cc0372b40a9"},"category":"frozen","brand":"Totinos","product":"pizza","price":5.15,"size":"large"}
-{"_id":{"$oid":"57092aa117cd4cc0372b40aa"},"category":"frozen","brand":"Gordons","product":"fish sticks","price":4.49,"size":"medium"}
-{"_id":{"$oid":"57092ae517cd4cc0372b40ab"},"category":"frozen","brand":"Lynn Wilson","product":"burito","price":1.35,"size":"small"}
-{"_id":{"$oid":"57092c3617cd4cc0372b40ac"},"category":"frozen","brand":"Red Rocket","product":"popscicle","price":3.69,"size":"large"}
-{"_id":{"$oid":"57092ccc17cd4cc0372b40ad"},"category":"frozen","brand":"Ben \u0026 Jerry","product":"ice cream","price":3.69,"size":"medium"}
-{"_id":{"$oid":"57092d0317cd4cc0372b40ae"},"category":"dairy","brand":"Super Mousey","product":"cheese","price":8.49,"size":"small"}
-=======
-=======
->>>>>>> 7a69f5d932e47979e35064bfdff47ab71eec701e
 /* 1 */
 {
     "_id" : ObjectId("5709145717cd4cc0372b409c"),

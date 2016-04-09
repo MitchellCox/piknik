@@ -1,21 +1,20 @@
 var express = require('express');
 var router = express.Router();
-var mongoose = require('mongoose'); 
+var mongoose = require('mongoose');
+var Grocery = mongoose.model('Grocery');
 
 // Get an item
 router.get('/', function(req, res) {
-  Items.find( function(err, items) {
-    res.render('explore', { title: 'Explore' });
+  Grocery.find( function(err, items) {
+    res.render('explore', { title: 'Grocery' });
   });
 });
 
 // Post an item
-router.items('/', function(req, res) {
- new Items({
-   title: req.body.title,
-   content: req.body.content,
-   color: req.body.color,
-   updated_at: Date.now()
+router.post('/', function(req, res) {
+ new Grocery({
+   category: req.body.category,
+   brand: req.body.brand,
  }).save( function(err, explore) {
    res.redirect('/explore');
  });
