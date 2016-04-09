@@ -1,8 +1,10 @@
 var mongoose = require( 'mongoose' );
 var Schema   = mongoose.Schema;
 
-//var Model = new Schema({
-//});
+var Search = new Schema({
+	category: { type: String, required: true},
+	brand: { type: String, required: true}
+});
 
-//mongoose.model( 'Model', Model );
+mongoose.model( 'Search', Search );
 mongoose.connect( 'mongodb://localhost/Piknik' );
