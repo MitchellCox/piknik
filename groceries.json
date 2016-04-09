@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <<<<<<< 38cd672b2612221c2599bce3244a29c13acce58b
 {"_id":{"$oid":"5709145717cd4cc0372b409c"},"category":"fruit","brand":"none","product":"banana","price":0.69,"size":"medium"}
 {"_id":{"$oid":"570914e817cd4cc0372b409d"},"category":"fruit","brand":"none","product":"apple","price":0.75,"size":"small"}
@@ -17,6 +18,8 @@
 {"_id":{"$oid":"57092ccc17cd4cc0372b40ad"},"category":"frozen","brand":"Ben \u0026 Jerry","product":"ice cream","price":3.69,"size":"medium"}
 {"_id":{"$oid":"57092d0317cd4cc0372b40ae"},"category":"dairy","brand":"Super Mousey","product":"cheese","price":8.49,"size":"small"}
 =======
+=======
+>>>>>>> 7a69f5d932e47979e35064bfdff47ab71eec701e
 /* 1 */
 {
     "_id" : ObjectId("5709145717cd4cc0372b409c"),
@@ -185,4 +188,7 @@
     "product" : "cheese",
     "price" : 8.49,
     "size" : "small"
+<<<<<<< HEAD
 >>>>>>> added routes and uses to app.js
+=======
+>>>>>>> 7a69f5d932e47979e35064bfdff47ab71eec701e
